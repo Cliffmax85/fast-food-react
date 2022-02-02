@@ -9,10 +9,12 @@
 
 .food-image {
   display: flex;
-  width: 33%;
+  width: 150px;
   border-radius: 10px;
   margin: 5px;
   padding: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
