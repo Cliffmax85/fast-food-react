@@ -1,10 +1,12 @@
+
 .App {
   text-align: center;
 }
 
 .food {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .food-image {
@@ -13,6 +15,23 @@
   border-radius: 10px;
   margin: 5px;
   padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdowns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+
+}
+
+.order-name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
 }
 
 .App-logo {
