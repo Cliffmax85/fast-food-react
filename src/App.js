@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Food from './Food';
+import FoodDropwdown from './FoodDropwdown';
 
 function App() {
+  const [foodId, setFoodId] = useState(1);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Food
+        foodId={foodId} />
+      <h1>
+        Please Choose Your Meal add name here
+      </h1>
+      <div>
+        <section className='dropdowns'>
+          <FoodDropwdown setFoodId={setFoodId} />
+        </section>
+      </div>
     </div>
   );
 }
