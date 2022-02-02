@@ -5,7 +5,7 @@ export default function OrderNameInput({ setOrderName }) {
     setOrderName(e.target.value);
   }
   return <div>
-      Who is This Order for?
+      Who is This Order for? 
     <input onChange={handleChange} />
   </div>;
 }
