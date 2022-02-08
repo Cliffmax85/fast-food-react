@@ -5,12 +5,15 @@ import FoodDropwdown from './FoodDropwdown';
 import DrinkDropdown from './DrinkDropdown';
 import SideDropdown from './SideDropdown';
 import OrderNameInput from './OrderNameInput';
+import InstructionForm from './InstructionForm';
+import InstructionsList from './InstructionsList';
 
 function App() {
   const [foodId, setFoodId] = useState(1);
   const [drinkId, setDrinkId] = useState(1);
   const [sideId, setSideId] = useState(1);
   const [orderName, setOrderName] = useState('Hungry Customer');
+  const [instruction, setInstruction] = useState(['Personalize: ']);
 
   return (
     <div className="App">
@@ -32,6 +35,8 @@ function App() {
           <DrinkDropdown setDrinkId={setDrinkId} />
           <SideDropdown setSideId={setSideId} />
         </section>
+        <InstructionForm setInstruction={setInstruction} instructions={instruction} />
+        <InstructionsList instructions={instruction} />
       </div>
     </div>
   );
